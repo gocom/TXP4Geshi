@@ -1,0 +1,30 @@
+Textpattern CMS tag syntax definitions for GeSHI (Generic Syntax Highlighter) v1.0.8
+
+Textpattern - http://textpattern.com
+GeSHI - http://qbnz.com/highlighter/
+
+Consider the project/definition file experimental and totally untested. Well, it's tested and used by me, but the results might not be exactly perfect.
+
+* Supports core attributes and tags as of Textpattern v4.4.1.
+* In addition to Textpattern tags, highlights and supports HTML5 attributes and tags.
+* Links core tags to Textpattern User Documentation - http://textpattern.net
+* HTML5 tags are linked to December Communications, Inc - http://december.com
+
+Drawbacks:
+
+* While the syntax is highlighted, plugin tags won't be linked as that wouldn't be possible.
+* Nesting and tags-as-attributes can cause variating results.
+
+Requirements:
+
+* GeSHi v1.0.8 (note: not for 1.1.x).
+
+Notes:
+
+* txp:hide - http://textpattern.net/wiki/index.php?title=hide - is treated as a block comment.
+
+Included files explained:
+
+* txp.php - the syntax definition files. Should be placed to your GeSHI language definitions directory. Definition's name is txp.
+* ref/listAtts - for generating list of tag attributes used in taghandles.php.
+* ref/listFunctions - for generating list of functions defined in taghandlers.php.
