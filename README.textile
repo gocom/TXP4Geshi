@@ -1,30 +1,31 @@
-Textpattern CMS tag syntax definitions for GeSHI (Generic Syntax Highlighter) v1.0.8
+h1. TXP4Geshi
 
-Textpattern - http://textpattern.com
-GeSHI - http://qbnz.com/highlighter/
+p. "Textpattern CMS":http://textpattern.com v4.x tag syntax definitions for "GeSHI":http://qbnz.com/highlighter/ (Generic Syntax Highlighter) v1.0.8
 
-Consider the project/definition file experimental and totally untested. Well, it's tested and used by me, but the results might not be exactly perfect.
+p. Consider the project/definition file experimental and totally untested. Well, it's tested and used by me, but the results might not be exactly perfect.
+
+h2. Features
 
 * Supports core attributes and tags as of Textpattern v4.4.1.
 * In addition to Textpattern tags, highlights and supports HTML5 attributes and tags.
-* Links core tags to Textpattern User Documentation - http://textpattern.net
-* HTML5 tags are linked to December Communications, Inc - http://december.com
+* Links TXP's core tags to "Textpattern User Documentation":http://textpattern.net.
+* HTML5 tags are linked to "December Communications, Inc":http://december.com.
 
-Drawbacks:
+h2. Drawbacks
 
-* While the syntax is highlighted, plugin tags won't be linked as that wouldn't be possible.
-* Nesting and tags-as-attributes can cause variating results.
+* While plugin-added tags are highlighted, these non-core tags won't be linked or referenced.
+* Nesting and tags-as-attributes (or as known, tags in tags) can cause variating results.
 
-Requirements:
+h2. Requirements
 
-* GeSHi v1.0.8 (note: not for 1.1.x).
+* GeSHi v1.0.8 (note: TXP4Geshi is not for GeSHi v1.1.x).
 
-Notes:
+h2. Notes
 
-* txp:hide - http://textpattern.net/wiki/index.php?title=hide - is treated as a block comment.
+* "txp:hide":http://textpattern.net/wiki/index.php?title=hide is treated as a block comment.
 
-Included files explained:
+h2. Included files explained:
 
-* txp.php - the syntax definition files. Should be placed to your GeSHI language definitions directory. Definition's name is txp.
+* txp.php - the syntax definition file. Should be placed to GeSHI language definitions directory. The definition's name is _txp_.
 * ref/listAtts - for generating list of tag attributes used in taghandles.php.
 * ref/listFunctions - for generating list of functions defined in taghandlers.php.
